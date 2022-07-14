@@ -11,8 +11,11 @@
 		9B84F8D6287E67B900856289 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84F8D5287E67B900856289 /* ContentView.swift */; };
 		9B84F8D8287E67BB00856289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B84F8D7287E67BB00856289 /* Assets.xcassets */; };
 		9B84F8DB287E67BB00856289 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B84F8DA287E67BB00856289 /* Preview Assets.xcassets */; };
-		9B84F8E2287E69B400856289 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84F8E1287E69B400856289 /* Post.swift */; };
 		9B84F8E5287EE3DC00856289 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84F8E4287EE3DC00856289 /* NetworkManager.swift */; };
+		9B84F8E7287EE80900856289 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84F8E6287EE80900856289 /* PostData.swift */; };
+		9B84F8EA287EF26E00856289 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B84F8E9287EF26E00856289 /* RobotoMono-Regular.ttf */; };
+		9B84F8EE287EF5E100856289 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84F8ED287EF5E100856289 /* PostDetailView.swift */; };
+		9B84F8F02880362000856289 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B84F8EF2880362000856289 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +24,12 @@
 		9B84F8D5287E67B900856289 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B84F8D7287E67BB00856289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B84F8DA287E67BB00856289 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9B84F8E1287E69B400856289 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9B84F8E4287EE3DC00856289 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9B84F8E6287EE80900856289 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		9B84F8E9287EF26E00856289 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
+		9B84F8EB287EF33F00856289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9B84F8ED287EF5E100856289 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		9B84F8EF2880362000856289 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +62,10 @@
 		9B84F8D2287E67B900856289 /* HackerNews-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9B84F8EB287EF33F00856289 /* Info.plist */,
 				9B84F8D3287E67B900856289 /* HackerNews_SwiftUIApp.swift */,
-				9B84F8D5287E67B900856289 /* ContentView.swift */,
-				9B84F8E1287E69B400856289 /* Post.swift */,
+				9B84F8EC287EF5BB00856289 /* Views */,
+				9B84F8E8287EF25400856289 /* Fonts */,
 				9B84F8E3287EE3B200856289 /* Models */,
 				9B84F8D7287E67BB00856289 /* Assets.xcassets */,
 				9B84F8D9287E67BB00856289 /* Preview Content */,
@@ -77,8 +85,27 @@
 			isa = PBXGroup;
 			children = (
 				9B84F8E4287EE3DC00856289 /* NetworkManager.swift */,
+				9B84F8E6287EE80900856289 /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9B84F8E8287EF25400856289 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9B84F8E9287EF26E00856289 /* RobotoMono-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9B84F8EC287EF5BB00856289 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B84F8D5287E67B900856289 /* ContentView.swift */,
+				9B84F8ED287EF5E100856289 /* PostDetailView.swift */,
+				9B84F8EF2880362000856289 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 			files = (
 				9B84F8DB287E67BB00856289 /* Preview Assets.xcassets in Resources */,
 				9B84F8D8287E67BB00856289 /* Assets.xcassets in Resources */,
+				9B84F8EA287EF26E00856289 /* RobotoMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B84F8E7287EE80900856289 /* PostData.swift in Sources */,
+				9B84F8EE287EF5E100856289 /* PostDetailView.swift in Sources */,
 				9B84F8E5287EE3DC00856289 /* NetworkManager.swift in Sources */,
-				9B84F8E2287E69B400856289 /* Post.swift in Sources */,
+				9B84F8F02880362000856289 /* WebView.swift in Sources */,
 				9B84F8D6287E67B900856289 /* ContentView.swift in Sources */,
 				9B84F8D4287E67B900856289 /* HackerNews_SwiftUIApp.swift in Sources */,
 			);
@@ -286,6 +316,7 @@
 				DEVELOPMENT_TEAM = 358P52VBYS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HackerNews-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +346,7 @@
 				DEVELOPMENT_TEAM = 358P52VBYS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HackerNews-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
